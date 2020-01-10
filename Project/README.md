@@ -1,5 +1,5 @@
 # Wellbeing prediction in Shanghai.
-## A sociology survey to quantify happiness 
+## A sociology survey to quantify happiness
 The goal of this study is to predict the wellbeing of residents of Shanghai. To do so, we were given a survey, conducted by the Shanghai University School of Sociology. This survey consists of three values. Each person were asked to tell if their home were smelly, noisy, and to quantify the clean (understand the beautifulness) of their home. These values don’t strictly rate the quality of smell or noise of zones in Shanghai. They must be however viewed as proxies of well-being estimation. A happy person will have a higher tendency to give higher values when someone less happy would give to the same place bad grades.
 
 ## A happiness value
@@ -9,7 +9,9 @@ Once this is stated, and in order to predict these values, we are going to creat
 In order to predict this happiness value, we were given different datasets. On the one hand, we had an administrative boundaries dataset, that divides up Shanghai into towns (small areas, bigger than neighbourhood, but smaller than district). On the other hand, we thought about what make the life of a Chinese pleasant. We had for instance a list of points of interests in Shanghai. This was useful as restaurants and convenience stores are particularly important in the life of a Chinese. Secondly, we processed a list of parks in Shanghai, to have the proportion of green space in these areas. Parks are an integral part of a Shanghai resident’s daily life. The last important data retrieved was related to Mobike, during its implantation in Shanghai, in August 2016. By computing the amount of bikes available day by day, we saw that more and more bikes were added in the city. When dividing this data by area, we chose to compute the amount of bikes available in a zone, by selecting only one value per bike (using its identifier).
 
 ## How well can we predict the happiness?
-Once all of this work was finished, we had an array showing, for each of our zone, the amount of restaurants, convenience stores, scenic spots, available bikes, or of green spaces. By feeding them to a machine learning algorithm, we were able to get interesting and encouraging results. Indeed, the prediction rate were around 76% for the best models (AdaBoost Classifier, K-Neighbours), and around 70% for the other ones tested (Gradient Boosting, Random Forest, SVC, Decision Trees). 
+Once all of this work was finished, we had an array showing, for each of our zone, the amount of restaurants, convenience stores, scenic spots, available bikes, or of green spaces. By feeding them to a machine learning algorithm, we were able to get interesting and encouraging results. Indeed, the prediction rate were around 76% for the best models (AdaBoost Classifier, K-Neighbours), and around 70% for the other ones tested (Gradient Boosting, Random Forest, SVC, Decision Trees).  This result could of course be improved with more data, other relevant datasets. A survey could be conducted in Shanghai to know which infrastructures are the more important for them.
 
 This shows the wellbeing is predictable, and thus can become a really interesting value in many cases. To add a little data visualization and give an example of use case on this subject, we came up with the idea of an happiness map during the Urban Data Challenge 2019. The idea was to show ideal flats according to this value of wellbeing in districts, and depending on the user of the service. Next is an example of what this map could look like.
-![](https://raw.githubusercontent.com/ramiibm/UM02-Deposit/master/Project/mapdemo.gif)
+![][image-1]
+
+[image-1]:	https://raw.githubusercontent.com/ramiibm/UM02-Deposit/master/Project/mapdemo.gif
